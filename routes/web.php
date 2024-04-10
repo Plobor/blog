@@ -4,11 +4,6 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-// personal-site.com => welcome
-// personal-site.com/contacto => contact
-// personal-site.com/blog => blog
-// personal-site.com/nosotros => about
-
 Route::view('/', 'welcome')->name('home');
 Route::view('contacto', 'contact')->name('contact');
 Route::get('blog', [PostController::class, 'index'])->name('blog');

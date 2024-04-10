@@ -9,12 +9,7 @@ class PostController extends Controller
 {
     public function index()
     {
-        $posts = [
-            ['title' => 'First post'],
-            ['title' => 'Second post'],
-            ['title' => 'Third post'],
-            ['title' => 'Fourth post'],
-        ];
+        $posts = DB::table('posts')->get();
 
         return view('blog', ['posts' => $posts]);
     }
