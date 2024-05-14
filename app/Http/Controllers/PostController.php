@@ -42,6 +42,5 @@ class PostController extends Controller
         $post->update($request->validated());
 
         return to_route('posts.show', $post)->with('status', 'Post updated!');
-
     }
 }
