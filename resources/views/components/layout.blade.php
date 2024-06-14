@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ $metaTitle ?? 'Default title' }}</title>
     <meta name="description" content="{{ $metaDescription ?? 'Default description' }}" />
+    @vite(['resources/css/app.scss', 'resources/js/app.js'])
 </head>
 <body>
 <x-navigation />
