@@ -6,6 +6,7 @@
         {{--          alt="Desarrollo de una API con Laravel siguiendo la especificación JSON:API" --}}
         {{--     /> --}}
         {{-- </div> --}}
+        @auth
         <div class="\-mt-8 flex items-center justify-center space-x-10">
             <a class="rounded-full bg-sky-600 p-4 text-sky-100 shadow-lg hover:bg-sky-700 active:bg-sky-800"
                href="{{ route('posts.edit', $post) }}">
@@ -27,6 +28,7 @@
                 </button>
             </form>
         </div>
+        @endauth
         <div class="flex-1 space-y-3 pt-4 md:text-center">
             {{-- <h3 class="text-sm font-semibold text-sky-500 dark:text-sky-400">Laravel</h3> --}}
             <h1 class="text-2xl font-semibold leading-tight text-slate-800 md:text-4xl dark:text-slate-200">
